@@ -2,235 +2,241 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>N11TV – Live Football</title>
+<title>NaraEle7en</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0b1122;
+  background: #0a0f1f;
   color: #fff;
 }
 
 /* NAVBAR */
 .navbar {
-  background: #111a35;
-  padding: 15px 25px;
+  background: #11172f;
+  padding: 14px 22px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 3px solid #e11d48;
 }
-.navbar .logo {
-  font-size: 24px;
+.navbar .brand {
+  font-size: 22px;
   font-weight: 700;
   color: #e11d48;
   text-decoration: none;
 }
-.navbar .menu a {
-  margin-left: 18px;
-  color: #fff;
+.navbar .nav-links a {
+  color: #ccc;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 600;
 }
-.navbar .menu a:hover {
-  color: #e11d48;
+.navbar .nav-links a:hover {
+  color: #fff;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 45px 20px;
+  padding: 40px 20px 20px;
 }
 .hero h1 {
-  font-size: 32px;
-  margin-bottom: 12px;
-}
-.hero span {
-  color: #e11d48;
+  font-size: 30px;
+  margin: 0;
 }
 .hero p {
-  font-size: 15px;
-  color: #bbb;
-}
-
-/* STREAM PLAYER */
-.stream-section {
-  text-align: center;
-  padding: 20px;
-}
-.player-box {
-  width: 90%;
-  max-width: 800px;
-  height: 450px;
-  background: #000;
-  border: 2px solid #e11d48;
-  border-radius: 14px;
-  margin: 20px auto;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(225,29,72,0.35);
-}
-
-/* MATCH CARDS */
-.container {
-  padding: 25px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 18px;
-}
-
-.match-card {
-  background: #141c3b;
-  border-radius: 14px;
-  padding: 18px;
-  border: 1px solid #1f2b55;
-  box-shadow: 0 0 12px rgba(225,29,72,0.18);
-  transition: 0.3s;
-}
-.match-card:hover {
-  transform: translateY(-6px);
-  border-color: #e11d48;
-  box-shadow: 0 0 22px rgba(225,29,72,0.5);
-}
-
-.match-card .league {
   font-size: 14px;
-  font-weight: 600;
-  color: #e11d48;
-  margin-bottom: 6px;
-}
-
-.match-card .status {
-  font-size: 12px;
-  text-align: right;
-  color: #ddd;
-  font-weight: 500;
-}
-
-.match-card .teams {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 18px;
+  color: #aaa;
   margin-top: 6px;
 }
 
-.match-card .score {
-  text-align: center;
-  font-size: 26px;
+/* PORTAL CARD */
+.portal {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+.portal-card {
+  background: #141c3a;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #1e274b;
+  box-shadow: 0 0 18px rgba(225,29,72,0.25);
+}
+
+.section-title {
+  font-size: 18px;
   font-weight: 700;
-  margin: 14px 0;
   color: #e11d48;
+  margin-bottom: 10px;
 }
 
-.match-card .actions {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-
-.btn {
+/* BUTTON CTA */
+.live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #e11d48;
   color: #fff;
-  padding: 11px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 9px;
+  padding: 13px 26px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 12px;
   text-decoration: none;
+  box-shadow: 0 0 15px rgba(225,29,72,0.5);
+  transition: 0.3s ease;
+}
+.live-btn:hover {
+  background: #ff335f;
+  transform: scale(1.05);
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: blink 1.2s infinite;
+}
+@keyframes blink {
+  0% {opacity:1;}
+  50% {opacity:0.3;}
+  100% {opacity:1;}
+}
+
+/* MATCH GRID */
+.matches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.match-box {
+  background: #1a2246;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #2a3365;
   transition: 0.2s;
 }
-.btn:hover {
-  background: #fb7185;
-  transform: scale(1.07);
+.match-box:hover {
+  border-color: #e11d48;
+  transform: translateY(-4px);
+}
+
+.match-box .league {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e11d48;
+}
+.match-box .teams {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 6px;
+  color: #fff;
+}
+.match-box .time {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ADS PLACEHOLDER */
+.ads-area {
+  background: #0d1225;
+  border: 1px dashed #e11d48;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin: 20px 0;
 }
 
 /* FOOTER */
 .footer {
-  background: #0f172a;
+  background: #070c1a;
   text-align: center;
   padding: 18px;
-  margin-top: 35px;
-  font-size: 14px;
-  color: #888;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #555;
   border-top: 2px solid #e11d48;
 }
-.footer a {
+.footer span {
   color: #e11d48;
-  text-decoration: none;
-  font-weight: 600;
-}
-.footer a:hover {
-  text-decoration: underline;
+  font-weight: 700;
 }
 </style>
-
 </head>
+
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
-  <a href="#" class="logo">N11<span style="color:#fff;">TV</span></a>
-  <div class="menu">
+  <a href="#" class="brand">NaraEle7en</a>
+  <div class="nav-links">
     <a href="#">Live</a>
-    <a href="#">Football</a>
-    <a href="#">Fixtures</a>
+    <a href="#">Matches</a>
+    <a href="#">About</a>
     <a href="#">Contact</a>
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>Welcome to <span>N11TV</span></h1>
-  <p>Your Hub for Live Football & Fast Score Updates</p>
+  <h1><span style="color:#e11d48;">N11TV</span> Football Portal</h1>
+  <p>We provide match links as a media intermediary. No streaming is hosted on this site.</p>
 </div>
 
-<!-- STREAM PLAYER SECTION -->
-<div class="stream-section">
-  <h2>🔥 Live Stream</h2>
-  <div class="player-box" id="streamPlayer">
-    <!-- Nanti di sini kita embed iframe stream -->
+<div class="portal">
+  <div class="portal-card">
+
+    <div class="ads-area">Ads Banner 728x90 (Place here later)</div>
+
+    <div class="section-title">⚡ Live Football Access</div>
+    <center>
+      <a href="LINK_STREAM_HERE" target="_blank" class="live-btn">
+        <div class="live-dot"></div> WATCH LIVE MATCH
+      </a>
+      <p style="color:#777; font-size:12px; margin-top:8px;">Opens in new tab • Supported by ads</p>
+    </center>
+
+    <div class="ads-area">Ads Banner 300x250 (Place here later)</div>
+
+    <div class="section-title">📺 Trending Matches</div>
+
+    <div class="matches">
+      <div class="match-box">
+        <div class="league">Premier League</div>
+        <div class="teams">Aston Villa vs Brighton</div>
+        <div class="time">Kick-off: 20:00</div>
+      </div>
+      <div class="match-box">
+        <div class="league">La Liga</div>
+        <div class="teams">Barcelona vs Atletico Madrid</div>
+        <div class="time">Kick-off: 22:15</div>
+      </div>
+      <div class="match-box">
+        <div class="league">Serie A</div>
+        <div class="teams">Atalanta vs Inter Milan</div>
+        <div class="time">Kick-off: 01:45</div>
+      </div>
+    </div>
+
+    <div class="ads-area">Pop-under ads active later</div>
+
   </div>
 </div>
 
-<!-- MATCH LIST -->
-<div class="container">
-
-  <div class="match-card">
-    <div class="league">Serie A</div>
-    <div class="status">LIVE • 72'</div>
-    <div class="teams">
-      <div>Atalanta</div>
-      <div>Inter Milan</div>
-    </div>
-    <div class="score">1 – 2</div>
-    <div class="actions">
-      <a href="#streamPlayer" class="btn">Watch</a>
-      <a href="#" class="btn">Stats</a>
-    </div>
-  </div>
-
-  <div class="match-card">
-    <div class="league">AFCON</div>
-    <div class="status">Upcoming</div>
-    <div class="teams">
-      <div>Ivory Coast</div>
-      <div>Cameroon</div>
-    </div>
-    <div class="score">–</div>
-    <div class="actions">
-      <a href="#" class="btn">Set Reminder</a>
-    </div>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
 <div class="footer">
-  © 2025 <a href="#">N11TV</a> • All rights reserved <br>
-  Powered by Passion for Football ⚽
+  Powered by <span>NaraEle7en</span> • Football Content Network<br>
+  © 2025 <span>N11TV</span> – All rights reserved
 </div>
 
 </body>
-</html>
+  </html>
