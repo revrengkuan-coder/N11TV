@@ -1,274 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Stadium Live Arena</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: 'Poppins', sans-serif;
-    background:#0a0f1f;
-    color:#fff;
-    padding:25px;
-  }
-  .container { max-width:1100px; margin:auto; }
-  h1 {
-    font-size:32px;
-    text-align:center;
-    margin-bottom:25px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-  }
+<title>N11TV</title>
 
-  /* Menu liga */
-  .league-menu {
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-bottom:30px;
-  }
-  .league-menu a {
-    background:#162447;
-    padding:12px 18px;
-    border-radius:10px;
-    color:#00eaff;
-    text-decoration:none;
-    font-weight:600;
-    font-size:15px;
-    transition:0.3s;
-  }
-  .league-menu a:hover {
-    background:#1f4068;
-    transform:translateY(-4px);
-    box-shadow:0 0 12px #00eaff;
-    color:#fff;
-  }
-
-  /* Box streaming */
-  .player-box {
-    background:#111827;
-    padding:15px;
-    border-radius:14px;
-    border:2px solid #1f4068;
-    box-shadow:0 0 18px rgba(0,255,255,0.15);
-    animation:glow 2s infinite alternate;
-  }
-  @keyframes glow {
-    0% { border-color:#1f4068; box-shadow:0 0 8px rgba(0,255,255,0.1); }
-    100% { border-color:#00eaff; box-shadow:0 0 20px rgba(0,255,255,0.3); }
-  }
-  iframe {
-    width:100%;
-    height:520px;
-    border:none;
-    border-radius:10px;
-  }
-
-  /* Footer */
-  .footer {
-    text-align:center;
-    margin-top:40px;
-    font-size:14px;
-    opacity:0.6;
-  }
-
-  /* Jadwal match dummy */
-  .schedule {
-    margin-top:30px;
-    background:#162447;
-    padding:18px;
-    border-radius:12px;
-  }
-  .schedule h2 {
-    font-size:20px;
-    margin-bottom:12px;
-    text-align:center;
-    color:#00eaff;
-  }
-  .match {
-    display:flex;
-    justify-content:space-between;
-    background:#1b1b2f;
-    padding:10px 14px;
-    border-radius:8px;
-    margin-bottom:10px;
-    font-size:15px;
-    font-weight:500;
-  }
-  .match span:last-child { color:#4da6ff; }
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-<div class="container">
-  <h1>Stadium Live Arena</h1>
-
-  <div class="league-menu">
-    <a href="#">EPL</a>
-    <a href="#">Serie A</a>
-    <a href="#">UCL</a>
-    <a href="#">La Liga</a>
-    <a href="#">Bundesliga</a>
-  </div>
-
-  <div class="player-box">
-    <iframe src="LINK_STREAMING" allowfullscreen></iframe>
-  </div>
-
-  <div class="schedule">
-    <h2>Today's Matches</h2>
-    <div class="match"><span>Chelsea vs Spurs</span><span>22:30 GMT</span></div>
-    <div class="match"><span>Atalanta vs Inter</span><span>01:45 GMT</span></div>
-    <div class="match"><span>Ivory Coast vs Cameroon</span><span>02:00 GMT</span></div>
-    <div class="match"><span>Barcelona vs Atletico</span><span>20:00 GMT</span></div>
-  </div>
-
-  <div class="footer">© 2025 Stadium Live Arena — For Football Fans Worldwide</div>
-</div>
-</body>
-</html>
 <style>
 body {
-  background:#0a0a0a;
-  font-family:Arial, sans-serif;
-  margin:0;
-  padding:0;
-  color:#fff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f1f;
+  color: #fff;
 }
 
-.header {
-  background:#111;
-  padding:14px;
-  text-align:center;
-  font-size:22px;
-  font-weight:bold;
-  border-bottom:3px solid #e60000;
-  text-transform:uppercase;
-  letter-spacing:1px;
+/* NAVBAR */
+.navbar {
+  background: #111833;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f7c600;
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f7c600;
+  text-decoration: none;
+}
+.navbar .menu a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar .menu a:hover {
+  color: #f7c600;
 }
 
-.nav-menu {
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  background:#0f0f0f;
-  padding:12px 0;
-  border-bottom:2px solid #222;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.hero span {
+  color: #f7c600;
 }
 
-.nav-menu div {
-  padding:10px 18px;
-  border-radius:8px;
-  font-size:15px;
-  font-weight:bold;
-  cursor:pointer;
-  transition:0.3s;
-  background:#1a1a1a;
-  border:1px solid #333;
-}
-
-.nav-menu div:hover {
-  background:#e60000;
-  border-color:#e60000;
-  box-shadow:0 0 14px #e60000;
-}
-
-.live-tag {
-  background:#e60000;
-  padding:8px 16px;
-  border-radius:6px;
-  font-weight:bold;
-  font-size:14px;
-  display:inline-block;
-  margin:18px auto;
-  box-shadow:0 0 12px #e60000;
+/* MATCH CARDS */
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
 }
 
 .match-card {
-  background:#111;
-  margin:14px;
-  padding:14px;
-  border-radius:14px;
-  border:1px solid #2a2a2a;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  transition:0.3s;
+  background: #141d3a;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #1f2a50;
+  box-shadow: 0 0 10px rgba(247,198,0,0.1);
+  transition: 0.3s;
 }
-
 .match-card:hover {
-  transform:scale(1.02);
-  border-color:#e60000;
-  box-shadow:0 0 16px #e60000;
+  transform: translateY(-5px);
+  border-color: #f7c600;
+  box-shadow: 0 0 15px rgba(247,198,0,0.3);
 }
 
-.team {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-size:16px;
-  font-weight:bold;
+.match-card .league {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f7c600;
+  margin-bottom: 8px;
 }
 
-.score {
-  font-size:20px;
-  font-weight:bold;
-  color:#ff3a3a;
+.match-card .teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.footer-btn {
-  text-align:center;
-  margin-top:24px;
+.match-card .score {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #f7c600;
 }
 
-.footer-btn a {
-  background:#e60000;
-  padding:16px 30px;
-  border-radius:14px;
-  color:#fff;
-  font-size:18px;
-  font-weight:bold;
-  text-decoration:none;
-  transition:0.3s;
-  box-shadow:0 0 16px #e60000;
+.match-card .status {
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 10px;
 }
 
-.footer-btn a:hover {
-  transform:scale(1.05);
-  background:#ff0000;
-  box-shadow:0 0 24px #ff0000;
+/* BUTTONS */
+.match-card .actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.btn {
+  background: #f7c600;
+  color: #000;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #ffd633;
+  transform: scale(1.05);
 }
 </style>
 
-<div class="header">RBTv+ Football Live</div>
+</head>
+<body>
 
-<div class="nav-menu">
-  <div>Live</div>
-  <div>Football</div>
-  <div>Leagues</div>
-  <div>Highlights</div>
-  <div>Schedule</div>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="#" class="logo">Bola<span>Stream</span></a>
+  <div class="menu">
+    <a href="#">Live</a>
+    <a href="#">Football</a>
+    <a href="#">Fixtures</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
 
-<div style="text-align:center;">
-  <div class="live-tag">LIVE MATCHES (Auto Updated)</div>
+<!-- HERO -->
+<div class="hero">
+  <h1>Watch <span>Live Football</span> Anytime</h1>
+  <p>Fast update • HD Stream • Worldwide Access</p>
 </div>
 
-<div class="match-card">
-  <div class="team">⚽ Atalanta</div>
-  <div class="score">VS</div>
-  <div class="team">Inter Milan</div>
+<!-- MATCH LIST -->
+<div class="container">
+  
+  <div class="match-card">
+    <div class="league">Serie A</div>
+    <div class="status">LIVE • 72'</div>
+    <div class="teams">
+      <div>Atalanta</div>
+      <div>Inter Milan</div>
+    </div>
+    <div class="score">1 - 2</div>
+    <div class="actions">
+      <a href="#" class="btn">Watch</a>
+      <a href="#" class="btn">Stats</a>
+    </div>
+  </div>
+
+  <div class="match-card">
+    <div class="league">AFCON</div>
+    <div class="status">Upcoming</div>
+    <div class="teams">
+      <div>Ivory Coast</div>
+      <div>Cameroon</div>
+    </div>
+    <div class="score">-</div>
+    <div class="actions">
+      <a href="#" class="btn">Reminder</a>
+    </div>
+  </div>
+
 </div>
 
-<div class="match-card">
-  <div class="team">🏆 Ivory Coast</div>
-  <div class="score">1 – 0</div>
-  <div class="team">Cameroon</div>
-</div>
-
-<div class="footer-btn">
-  <a href="LINK_STREAMING" target="_blank">WATCH STREAM</a>
-</div>
+</body>
+</html>
