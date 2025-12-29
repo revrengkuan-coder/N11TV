@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NaraEle7en</title>
+<title>N11TV</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -12,6 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #0a0f1f;
   color: #fff;
+  text-align: center;
 }
 
 /* NAVBAR */
@@ -40,41 +41,19 @@ body {
   color: #fff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-  text-align: center;
   padding: 40px 20px 20px;
 }
 .hero h1 {
-  font-size: 30px;
+  font-size: 32px;
   margin: 0;
+  font-weight: 700;
 }
 .hero p {
   font-size: 14px;
   color: #aaa;
   margin-top: 6px;
-}
-
-/* PORTAL CARD */
-.portal {
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 0 20px;
-}
-
-.portal-card {
-  background: #141c3a;
-  border-radius: 16px;
-  padding: 22px;
-  border: 1px solid #1e274b;
-  box-shadow: 0 0 18px rgba(225,29,72,0.25);
-}
-
-.section-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #e11d48;
-  margin-bottom: 10px;
 }
 
 /* BUTTON CTA */
@@ -84,22 +63,22 @@ body {
   gap: 8px;
   background: #e11d48;
   color: #fff;
-  padding: 13px 26px;
-  font-size: 17px;
+  padding: 14px 30px;
+  font-size: 16px;
   font-weight: 700;
   border-radius: 12px;
   text-decoration: none;
-  box-shadow: 0 0 15px rgba(225,29,72,0.5);
+  box-shadow: 0 0 15px rgba(225,29,72,0.6);
   transition: 0.3s ease;
+  margin-top: 15px;
 }
 .live-btn:hover {
   background: #ff335f;
   transform: scale(1.05);
 }
-
 .live-dot {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background: #22c55e;
   border-radius: 50%;
   animation: blink 1.2s infinite;
@@ -110,41 +89,22 @@ body {
   100% {opacity:1;}
 }
 
-/* MATCH GRID */
+/* MATCH WIDGET */
 .matches {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-  margin-top: 18px;
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 20px;
+  background: #141c3a;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #1e274b;
+  box-shadow: 0 0 18px rgba(225,29,72,0.25);
 }
-
-.match-box {
-  background: #1a2246;
-  padding: 16px;
-  border-radius: 12px;
-  border: 1px solid #2a3365;
-  transition: 0.2s;
-}
-.match-box:hover {
-  border-color: #e11d48;
-  transform: translateY(-4px);
-}
-
-.match-box .league {
-  font-size: 13px;
+.section-title {
+  font-size: 18px;
   font-weight: 700;
   color: #e11d48;
-}
-.match-box .teams {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 6px;
-  color: #fff;
-}
-.match-box .time {
-  font-size: 12px;
-  color: #888;
-  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 /* ADS PLACEHOLDER */
@@ -153,18 +113,17 @@ body {
   border: 1px dashed #e11d48;
   border-radius: 12px;
   padding: 14px;
-  text-align: center;
   font-size: 13px;
   color: #666;
-  margin: 20px 0;
+  margin: 18px auto;
+  width: 80%;
 }
 
 /* FOOTER */
 .footer {
   background: #070c1a;
-  text-align: center;
   padding: 18px;
-  margin-top: 40px;
+  margin-top: 35px;
   font-size: 13px;
   color: #555;
   border-top: 2px solid #e11d48;
@@ -189,50 +148,35 @@ body {
 </div>
 
 <div class="hero">
-  <h1><span style="color:#e11d48;">NaraEle7en</span> Football Portal</h1>
-  <p>We provide match links as a media intermediary. No streaming is hosted on this site.</p>
+  <h1><span style="color:#e11d48;">N11TV</span> Football Portal</h1>
+  <p>We are an intermediary portal. Streams open on third-party broadcast sites.</p>
+
+  <a href="LINK_STREAM_HERE" target="_blank" class="live-btn">
+    <div class="live-dot"></div> WATCH LIVE STREAM
+  </a>
 </div>
 
-<div class="portal">
-  <div class="portal-card">
+<div class="ads-area">Ads Banner 728×90 (Add Adsterra code here later)</div>
 
-    <div class="ads-area">Ads Banner 728x90 (Place here later)</div>
+<div class="matches">
+  <div class="section-title">🔥 Trending Matches Today</div>
 
-    <div class="section-title">⚡ Live Football Access</div>
-    <center>
-      <a href="LINK_STREAM_HERE" target="_blank" class="live-btn">
-        <div class="live-dot"></div> WATCH LIVE MATCH
-      </a>
-      <p style="color:#777; font-size:12px; margin-top:8px;">Opens in new tab • Supported by ads</p>
-    </center>
-
-    <div class="ads-area">Ads Banner 300x250 (Place here later)</div>
-
-    <div class="section-title">📺 Trending Matches</div>
-    <center style="margin-bottom:18px;">
-  <a href="https://www.rbtvplus17.blog/id" target="_blank" class="live-btn"
-     style="background:#e11d48; padding:14px 28px; border-radius:12px; text-decoration:none; color:white; font-weight:700; font-size:16px; display:inline-flex; align-items:center; gap:8px; box-shadow:0 0 12px rgba(225,29,72,0.6);">
-    <div style="width:9px; height:9px; background:#22c55e; border-radius:50%; animation:blink 1.2s infinite;"></div>
-    WATCH LIVE STREAM
-  </a>
-  <style>@keyframes blink{0%{opacity:1}50%{opacity:0.3}100%{opacity:1}}</style>
-    </center>
-
-    <div class="matches">
-      <div class="matches">
+  <!-- SCOREAXIS AUTO UPDATE -->
   <script src="https://scoreaxis.com/widget/livescore.js"></script>
-  <div class="scoreaxis-livescore" 
-       data-theme="dark" 
-       data-sport="football" 
-       data-width="100%" 
-       data-height="400">
+  <div class="scoreaxis-livescore"
+       data-theme="dark"
+       data-sport="football"
+       data-width="100%"
+       data-height="420">
   </div>
 </div>
 
+<div class="ads-area">Ads Banner 300×250 (Add Adsterra code here later)</div>
+
 <div class="footer">
-  Powered by <span>NaraEle7en</span> • Football Content Network<br>
-  © 2025 <span>NaraEle7en</span> – All rights reserved
+  Powered by <span>NaraEle7en</span> • <span>N11TV</span><br>
+  © 2025 – All rights reserved
 </div>
 
 </body>
-  </html>
+</html>
