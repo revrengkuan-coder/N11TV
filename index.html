@@ -130,3 +130,145 @@
 </div>
 </body>
 </html>
+<style>
+body {
+  background:#0a0a0a;
+  font-family:Arial, sans-serif;
+  margin:0;
+  padding:0;
+  color:#fff;
+}
+
+.header {
+  background:#111;
+  padding:14px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+  border-bottom:3px solid #e60000;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.nav-menu {
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  background:#0f0f0f;
+  padding:12px 0;
+  border-bottom:2px solid #222;
+}
+
+.nav-menu div {
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  background:#1a1a1a;
+  border:1px solid #333;
+}
+
+.nav-menu div:hover {
+  background:#e60000;
+  border-color:#e60000;
+  box-shadow:0 0 14px #e60000;
+}
+
+.live-tag {
+  background:#e60000;
+  padding:8px 16px;
+  border-radius:6px;
+  font-weight:bold;
+  font-size:14px;
+  display:inline-block;
+  margin:18px auto;
+  box-shadow:0 0 12px #e60000;
+}
+
+.match-card {
+  background:#111;
+  margin:14px;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid #2a2a2a;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:0.3s;
+}
+
+.match-card:hover {
+  transform:scale(1.02);
+  border-color:#e60000;
+  box-shadow:0 0 16px #e60000;
+}
+
+.team {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.score {
+  font-size:20px;
+  font-weight:bold;
+  color:#ff3a3a;
+}
+
+.footer-btn {
+  text-align:center;
+  margin-top:24px;
+}
+
+.footer-btn a {
+  background:#e60000;
+  padding:16px 30px;
+  border-radius:14px;
+  color:#fff;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.3s;
+  box-shadow:0 0 16px #e60000;
+}
+
+.footer-btn a:hover {
+  transform:scale(1.05);
+  background:#ff0000;
+  box-shadow:0 0 24px #ff0000;
+}
+</style>
+
+<div class="header">RBTv+ Football Live</div>
+
+<div class="nav-menu">
+  <div>Live</div>
+  <div>Football</div>
+  <div>Leagues</div>
+  <div>Highlights</div>
+  <div>Schedule</div>
+</div>
+
+<div style="text-align:center;">
+  <div class="live-tag">LIVE MATCHES (Auto Updated)</div>
+</div>
+
+<div class="match-card">
+  <div class="team">⚽ Atalanta</div>
+  <div class="score">VS</div>
+  <div class="team">Inter Milan</div>
+</div>
+
+<div class="match-card">
+  <div class="team">🏆 Ivory Coast</div>
+  <div class="score">1 – 0</div>
+  <div class="team">Cameroon</div>
+</div>
+
+<div class="footer-btn">
+  <a href="LINK_STREAMING" target="_blank">WATCH STREAM</a>
+</div>
